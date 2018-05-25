@@ -69,8 +69,8 @@
             android:layout_gravity="center|top"
             android:layout_marginTop="60dp"
             style="?android:attr/progressBarStyle"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content" />
+            android:layout_width="100dp"
+            android:layout_height="100dp" />
 
 
 

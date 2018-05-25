@@ -5,6 +5,9 @@ import android.content.SharedPreferences;
 import android.os.Handler;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.view.animation.Animation;
+import android.view.animation.AnimationUtils;
+import android.widget.TextView;
 
 import com.backendless.Backendless;
 
@@ -24,6 +27,7 @@ public class Launcher extends AppCompatActivity {
     String password;
     SharedPreferences registered;
     boolean register;
+    TextView appName;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -31,6 +35,9 @@ public class Launcher extends AppCompatActivity {
         setContentView(R.layout.activity_launcher);
         Backendless.setUrl( Defaults.SERVER_URL );
         Backendless.initApp( getApplicationContext(), Defaults.APPLICATION_ID, Defaults.API_KEY );
+        appName = (TextView) findViewById(R.id.appName);
+        final Animation myAnim = AnimationUtils.loadAnimation(this, R.anim.bounce);
+        appName.startAnimation(myAnim);
 
         new Handler().postDelayed(new Runnable() {
             @Override

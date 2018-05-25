@@ -8,8 +8,8 @@
     <string name="sign_up">S\'enregistrer</string>
     <string name="sign">Se connecter</string>
     <string name="utilisateur">utilisateur</string>
-    <string name="telephone">Telephone</string>
-    <string name="prenom">Prenom</string>
+    <string name="telephone">Téléphone</string>
+    <string name="prenom">Prénom</string>
     <string name="nom">Nom</string>
     <string name="bold"> <b>Belgrade</b></string>
     <string name="departure"><b>Departure 12:40</b></string>
@@ -17,11 +17,17 @@
     <string name="title"> <b>Select Departing Flight</b></string>
     <string name="trier">Trier</string>
     <string name="triomphe">Triomphe</string>
-    <string name="registration">Register succesfull   please confirm your registration by email</string>
+    <string name="registration">Enregistrer avec succes</string>
     <string name="pass_same">Les mots de passe ne sont pas les memes</string>
     <string name="name_requis">Le nom ainsi que le est requis</string>
     <string name="email_request">l\'adresse mail est requise</string>
     <string name="network_a">Utilise le Wi-Fi ou les donnees mobile</string>
     <string name="network_b">Pas d\'internet</string>
-    <string name="connection_succes">Connecte avec succes</string>
+    <string name="connection_succes">Connecté avec succes</string>
+    <string name="detail">Détail de l\'évènement</string>
+    <string name="inscrire">S\'inscrire</string>
+    <string name="signet">Ajouter aux signets</string>
+    <string name="deconnexion">Déconnexion</string>éros" | Archive INA - YouTube
+    https://www.youtube.com/watch?v=OBrJC2cQ7-g
+    Paroles
 </resources>

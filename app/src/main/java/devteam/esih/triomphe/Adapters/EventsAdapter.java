@@ -1,6 +1,7 @@
 package devteam.esih.triomphe.Adapters;
 
 import android.content.Context;
+import android.content.Intent;
 import android.graphics.Bitmap;
 import android.os.Build;
 import android.support.annotation.RequiresApi;
@@ -14,6 +15,7 @@ import android.widget.TextView;
 import java.util.ArrayList;
 import java.util.List;
 
+import devteam.esih.triomphe.Activities.DetailActivity;
 import devteam.esih.triomphe.Activities.MainActivity;
 import devteam.esih.triomphe.Models.Evenements;
 import devteam.esih.triomphe.R;
@@ -79,14 +81,23 @@ Context context;
     @Override
     public void onBindViewHolder(final MyViewHolder holder, int position) {
 
-        Evenements ev = evenements.get(position);
-
+        final Evenements ev = evenements.get(position);
+        holder.ev_title.setText(ev.getEv_title());
         holder.ev_detail.setText(ev.getEv_title());
         //ImageUtils.displayImageFromUrl(context, ev.getEv_img(), holder.ev_image, null);
         holder.ev_detail.setText(ev.getEv_detail());
         holder.ev_room.setText(ev.getEv_room());
         holder.ev_price.setText(ev.getEv_price());
         holder.ev_time.setText(ev.getEv_date());
+
+        holder.itemView.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent it = new Intent(context, DetailActivity.class);
+                it.putExtra("event", ev);
+                context.startActivity(it);
+            }
+        });
 
 
     }

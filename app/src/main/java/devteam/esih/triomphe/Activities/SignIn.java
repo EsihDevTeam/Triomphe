@@ -69,7 +69,9 @@ public class SignIn extends AppCompatActivity {
                         it = new Intent(SignIn.this, MainActivity.class);
                         it.putExtra("userInfo", response);
                         if(DataQuery.getEvents()){
-
+                            //Toast.makeText(SignIn.this, "Data", Toast.LENGTH_SHORT).show();
+                        }else{
+                            //Toast.makeText(SignIn.this, "No data", Toast.LENGTH_SHORT).show();
                         }
                         startActivity(it);
                     }

@@ -8,7 +8,40 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-<include layout="@layout/toolbar"/>
+    <android.support.v7.widget.Toolbar
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/holo_red_light">
+
+
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:id="@+id/ivProfil"
+            android:background="@drawable/ic_u"/>
+
+
+        <devteam.esih.triomphe.customfonts.MyTextView_Bold
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/triomphe"
+            android:textColor="#fff"
+            android:textSize="16sp"
+            android:layout_gravity="center"/>
+
+
+        <devteam.esih.triomphe.customfonts.MyTextView_Bold
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/trier"
+            android:textColor="#fff"
+            android:textSize="16sp"
+            android:layout_marginRight="20dp"
+            android:layout_gravity="right"/>
+
+    </android.support.v7.widget.Toolbar>
 
 
     <android.support.design.widget.CoordinatorLayout
@@ -37,6 +70,7 @@
         android:layout_height="wrap_content"
         android:text="Titre"
         android:textColor="#2f2f2f"
+        android:visibility="gone"
         android:layout_marginTop="15dp"
         android:layout_marginBottom="15dp"
         android:layout_marginLeft="20dp"/>

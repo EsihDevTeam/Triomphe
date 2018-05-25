@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+   >
+    <android.support.v7.widget.Toolbar
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/holo_red_light">
+
+
+        <ImageView
+            android:layout_width="30dp"
+            android:id="@+id/ivBack"
+            android:layout_height="30dp"
+            android:background="@drawable/ic_backward_arrow"/>
+
+
+        <devteam.esih.triomphe.customfonts.MyTextView_Bold
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/triomphe"
+            android:textColor="#fff"
+            android:textSize="16sp"
+            android:layout_gravity="center"/>
+
+
+        <devteam.esih.triomphe.customfonts.MyTextView_Bold
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/deconnexion"
+            android:textColor="#fff"
+            android:id="@+id/logout"
+            android:textSize="16sp"
+            android:layout_marginRight="20dp"
+            android:layout_gravity="right"/>
+
+
+
+    </android.support.v7.widget.Toolbar>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="190dp"
+        android:background="#FF5252"
+        android:orientation="vertical"
+        android:layout_gravity="center"
+
+        >
+
+        <devteam.esih.triomphe.Utils.RoundedImageView
+            android:id="@+id/logo"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:src="@drawable/user_e"
+            android:scaleType="centerCrop"
+            android:layout_gravity="center"
+            android:layout_marginTop="30dp"
+           />
+
+        <TextView
+            android:id="@+id/name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Noel Emmanuel Roodly"
+            android:gravity="center"
+            android:textColor="#FFF"
+            android:textSize="22dp"
+
+            android:layout_marginTop="10dp"/>
+        <TextView
+            android:id="@+id/photographer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="esih.devteam@gmail.com"
+            android:gravity="center"
+            android:textColor="#FFF"
+            android:textSize="13dp"
+            android:layout_marginTop="4dp"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="16dp">
+
+
+
+        <LinearLayout
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+        <TextView
+            android:id="@+id/no1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="26"
+            android:textSize="16sp"
+            android:textColor="#E53935"
+            android:gravity="center"
+            android:textStyle="bold"/>
+            <TextView
+                android:id="@+id/comment"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Reservations"
+                android:textColor="#000"
+                android:gravity="center"/>
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <TextView
+                android:id="@+id/no2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="7"
+                android:textSize="16dp"
+                android:textColor="#E53935"
+                android:gravity="center"
+                android:textStyle="bold"
+                />
+            <TextView
+                android:id="@+id/channel"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Historique"
+                android:textColor="#000"
+                android:gravity="center"/>
+        </LinearLayout>
+
+
+
+        <LinearLayout
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <TextView
+                android:id="@+id/no3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="11"
+                android:textSize="16dp"
+                android:textColor="#E53935"
+                android:gravity="center"
+                android:textStyle="bold"/>
+            <TextView
+                android:id="@+id/bookmark"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Signets"
+                android:textColor="#000"
+                android:gravity="center"/>
+        </LinearLayout>
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/listview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:divider="#00000000"
+        >
+    </ListView>
+
+</LinearLayout>

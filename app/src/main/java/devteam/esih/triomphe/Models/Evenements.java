@@ -1,6 +1,9 @@
 package devteam.esih.triomphe.Models;
 
-public class Evenements {
+import java.io.Serializable;
+
+public class Evenements implements Serializable {
+
     private String ev_title;
     private String ev_detail;
     private String ev_price;
@@ -9,7 +12,8 @@ public class Evenements {
     private String created;
     private String objectId;
     private String ev_room;
-    public String ev_img;
+    private String ev_img;
+    private String ev_fullDetail;
 
     public Evenements() {
 
@@ -102,5 +106,13 @@ public class Evenements {
 
     public void setEv_img(String ev_img) {
         this.ev_img = ev_img;
+    }
+
+    public String getEv_fullDetail() {
+        return ev_fullDetail;
+    }
+
+    public void setEv_fullDetail(String ev_fullDetail) {
+        this.ev_fullDetail = ev_fullDetail;
     }
 }

@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff"
+    tools:context=".Activities.DetailActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none"
+
+        >
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+            <android.support.v7.widget.Toolbar xmlns:android="http://schemas.android.com/apk/res/android"
+                android:id="@+id/toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:color/holo_red_light">
+
+                <ImageView
+                    android:id="@+id/ivBack"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:background="@drawable/ic_backward_arrow" />
+
+
+                <devteam.esih.triomphe.customfonts.MyTextView_Bold
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="@string/triomphe"
+                    android:textColor="#fff"
+                    android:textSize="16sp" />
+
+
+                <devteam.esih.triomphe.customfonts.MyTextView_Bold
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right"
+                    android:layout_marginRight="20dp"
+                    android:drawableLeft="@drawable/ic_share"
+                    android:textColor="#fff"
+                    android:textSize="16sp" />
+
+
+            </android.support.v7.widget.Toolbar>
+
+
+            <FrameLayout
+                android:id="@+id/pic"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/toolbar">
+
+                <ImageView
+
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    android:background="@drawable/maxa" />
+            </FrameLayout>
+
+
+            <LinearLayout
+                android:id="@+id/linear1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/pic"
+                android:orientation="vertical"
+                android:visibility="visible">
+
+                <devteam.esih.triomphe.customfonts.OtherTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginTop="16dp"
+                    android:id="@+id/ev_title"
+                    tools:text="Title"
+                    android:textColor="@color/text"
+                    android:textSize="26dp" />
+
+                <devteam.esih.triomphe.customfonts.OtherTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/ev_room"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginTop="6dp"
+                    tools:text="salle"
+                    android:textColor="#ff5e5c"
+                    android:textSize="14dp" />
+
+                <View
+                    android:id="@+id/action_divider"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginRight="156dp"
+                    android:layout_marginTop="16dp"
+                    android:background="@color/colordevider" />
+
+                <devteam.esih.triomphe.customfonts.OtherTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="16dp"
+                    android:id="@+id/ev_price"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginTop="10dp"
+                    android:text="@string/price"
+                    android:textColor="@color/text"
+                    android:textSize="24dp" />
+
+                <devteam.esih.triomphe.customfonts.OtherTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginTop="16dp"
+                    android:text="@string/detail"
+                    android:textColor="@color/text"
+                    android:textSize="16dp" />
+
+                <devteam.esih.triomphe.customfonts.OtherTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginTop="10dp"
+                    android:lineSpacingExtra="5dp"
+                    android:id="@+id/ev_fullDetail"
+                    android:text="A progressive casual runner, Motion provides long lasting comfort, traction and flexibility in an upper of breathable materials with a distinctive cage-inspired eye stay. A lightweight sole with a deep geometric."
+                    android:textColor="@color/subtext"
+                    android:textSize="14dp"
+                   />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/inscrire"
+                        android:layout_width="120dp"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/rounded1"
+                        android:layout_marginTop="15dp"
+                        android:layout_marginBottom="10dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:textAlignment="center"
+                        android:padding="14dp"
+                        android:text="@string/inscrire"
+                        android:clickable="true"
+                        android:textSize="16sp"
+                        android:textColor="#fff"
+                        />
+
+                    <TextView
+                        android:id="@+id/signet"
+                        android:layout_width="170dp"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/rounded1"
+                        android:layout_marginTop="15dp"
+                        android:layout_marginBottom="10dp"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="20dp"
+                        android:textAlignment="center"
+                        android:padding="14dp"
+                        android:text="@string/signet"
+                        android:clickable="true"
+                        android:textSize="16sp"
+                        android:textColor="#fff"
+                        />
+                </LinearLayout>
+
+            </LinearLayout>
+        </RelativeLayout>
+    </ScrollView>
+</RelativeLayout>
