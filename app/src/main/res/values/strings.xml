@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">Triomphe</string>
+    <string name="no_account">Pas encore de compte ?</string>
+    <string name="facebook_connect">Facebook</string>
+    <string name="sign_in">Connexion</string>
+    <string name="password">Mot de passe</string>
+    <string name="e_mail">E-mail</string>
+    <string name="sign_up">S\'enregistrer</string>
+    <string name="sign">Se connecter</string>
+    <string name="utilisateur">utilisateur</string>
+    <string name="telephone">Telephone</string>
+    <string name="prenom">Prenom</string>
+    <string name="nom">Nom</string>
+    <string name="bold"> <b>Belgrade</b></string>
+    <string name="departure"><b>Departure 12:40</b></string>
+    <string name="price"><b>21,829 USD</b></string>
+    <string name="title"> <b>Select Departing Flight</b></string>
+    <string name="trier">Trier</string>
+    <string name="triomphe">Triomphe</string>
+</resources>
