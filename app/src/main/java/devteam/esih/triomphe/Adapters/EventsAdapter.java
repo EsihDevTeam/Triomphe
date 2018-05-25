@@ -11,6 +11,7 @@ import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.TextView;
 
+import java.util.ArrayList;
 import java.util.List;
 
 import devteam.esih.triomphe.Activities.MainActivity;
@@ -26,7 +27,7 @@ Context context;
 
     boolean showingFirst = true;
 
-    private List<Evenements> evenements;
+    private ArrayList<Evenements> evenements;
 
 
     ImageView NormalImageView;
@@ -47,7 +48,6 @@ Context context;
 
         public MyViewHolder(View view) {
             super(view);
-
             ev_image = (ImageView) view.findViewById(R.id.ev_image);
             ev_title = (TextView) view.findViewById(R.id.ev_title);
             ev_detail = (TextView) view.findViewById(R.id.ev_detail);
@@ -57,11 +57,12 @@ Context context;
         }
 
     }
-    
+
 
     public EventsAdapter(Context m, List<Evenements> eList) {
-        this.evenements = eList;
-       this.context = m;
+        this.evenements = new ArrayList<>();
+        this.evenements.addAll(eList);
+        this.context = m;
     }
 
     @Override

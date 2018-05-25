@@ -26,7 +26,7 @@ public class DataQuery {
     }
 
     public static boolean getEvents(){
-
+        events = new ArrayList<>();
         AsyncTask.execute(new Runnable() {
             @Override
             public void run() {
@@ -51,7 +51,7 @@ public class DataQuery {
     }
 
     public static boolean getSuivre(BackendlessUser user){
-
+        matchings =  new ArrayList<>();
         AsyncTask.execute(new Runnable() {
             @Override
             public void run() {
